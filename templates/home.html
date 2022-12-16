@@ -3,8 +3,10 @@
 {% block content %}
     {% for post in object_list %}
         <div class="post-entry">
-            <h2><a href="{% url 'post_detail' post.pk %}">{{ post.title }}</a></h2>
+            <div class="blog">
+            <h2 ><a class="tit" href="{% url 'post_detail' post.pk %}">{{ post.title }}</a></h2>
             <p>{{ post.body | slice:":100" }}</p>
+            </div>
         </div>
     {% endfor %}
 {% endblock content %}

@@ -1,7 +1,38 @@
-header h1 a{
-    color: green;
-}
+@import url('https://fonts.googleapis.com/css2? family= Titillium+Web:ital,wght@1,300 & display=swap');
+
+
 a{
     text-decoration: none;
     /* color: rgb(247, 10, 10); */
+}
+h1{
+    color: white;
+    /* font-family: 'Rubik Puddles', cursive; */
+    font-family: 'Rubik Vinyl', cursive;
+    /* font-family: 'Titillium Web', sans-serif; */
+}
+.blog{
+    /* border: 1px solid black; */
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    background: rgb(202, 247, 217);
+}
+.tit{
+    color: rgb(80, 82, 88);
+}
+.newpost{
+    font-family: 'Times New Roman', Times, serif;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background: rgb(255, 254, 254);
+}
+a{
+    color: beige;
+}
+body{
+    background-image: url(https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg);
 }

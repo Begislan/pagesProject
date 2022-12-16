@@ -2,8 +2,8 @@
 
 {% block content %}
     <h1>Изменит поста</h1>
-    <form action="" method="post">{% csrf_token %}
+    <form class="form-control" action="" method="post">{% csrf_token %}
         {{ form.as_p }}
-        <input type="submit" value="Изменит">
-    </form>
+        <input class="btn btn-secondary" type="submit" value="Изменит и сохранить">
+    </form><br>
 {% endblock content %}

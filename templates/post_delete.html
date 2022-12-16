@@ -1,9 +1,11 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <h1>Удалить пост</h1>
+<div class="blog">
+    <h1 style="color: rgb(16, 15, 15);">Удалить пост</h1>
     <form action="" method="post">{% csrf_token %}
-        <p>"{{ post.title }}" Точно удалить поста?</p>
-        <input type="submit" value="Удалить">
+        <p>"{{ post.title }}" Точно удалить поста?</p></div> <br>
+        <input class="btn btn-primary" type="submit" value="Удалить">
     </form>
+    <br>
 {% endblock content %}
