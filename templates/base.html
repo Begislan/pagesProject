@@ -18,7 +18,13 @@
 <header>
   <h1 style="border-bottom: 5px solid black;"><a href="{% url 'home' %}">Жанылыктар</a></h1>
 </header>
-
+{% if user.is_authentificated %}
+  <p>Добро пажаловать, {{ user.name }}!</p>
+{% else %}
+<p>
+  <a href="{% url 'login' %}">Вход в сайт</a>
+</p>  
+{% endif %}
 <div>
   {% block content %}
   {% endblock content %}

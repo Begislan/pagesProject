@@ -2,5 +2,8 @@
 
 {% block content %}
 <h2>Вход в сайт</h2>
-<form action=""></form>
+    <form class="form-control" method="post">{% csrf_token %}
+{{ form.as_p }}
+    <button class="btn btn-warning" type="sybmit">Вход</button>
+</form>
 {% endblock content %}

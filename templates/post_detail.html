@@ -3,7 +3,7 @@
 {% block content %}
         <div class="post-entry blog">
             <h2>{{ post.title }}</h2>
-            <!-- <h3>{{ post.author }}</h3> -->
+            <h3>{{ post.author }}</h3>
             <p>{{ post.body }}</p>
         </div><br>
     <button class="btn btn-secondary" style="color: white;"><a href="{% url 'post_edit' post.pk %}">Изменит поста</a></button>
