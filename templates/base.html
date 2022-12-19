@@ -20,6 +20,7 @@
 </header>
 {% if user.is_authentificated %}
   <p>Добро пажаловать, {{ user.name }}!</p>
+  <p><a href="{% url 'logout' %}">Выход</a></p>
 {% else %}
 <p>
   <a href="{% url 'login' %}">Вход в сайт</a>

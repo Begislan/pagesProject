@@ -36,3 +36,21 @@ a{
 body{
     background-image: url(https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg);
 }
+#id_title{
+    width: 70%;
+    height: 60px;
+    background: rgb(124, 100, 100);
+    font-size: 25px;
+    border-radius: 10px;
+}
+.form-control{
+ 
+   }
+#id_body{
+    border-radius: 15px;
+    background: rgb(135, 123, 123);
+}
+#id_author{
+    border-radius: 8px;
+    background: rgb(225, 198, 198);
+}
